@@ -92,8 +92,8 @@ function createCard(data) {
 /// </summary>
 function createTable(data) {
     try {
-        table = createElement("table", null, weather_wrap);
-        var tbody = createElement("tbody", null, table);
+        let table = createElement("table", null, weather_wrap);
+        let tbody = createElement("tbody", null, table);
 
         createColumn(data.wind.speed + "m/s W", data.main.pressure + "hPa", tbody);
 
@@ -130,8 +130,8 @@ function createColumn(data_col1, data_col2, tbody) {
 /// </summary>
 function createElement(tag_type, data = null, parent_tag = null) {
     try {
-        var element = document.createElement(tag_type);
-        var newContent = data ? document.createTextNode(data) : "";
+        let element = document.createElement(tag_type);
+        let newContent = data ? document.createTextNode(data) : "";
         newContent ? element.appendChild(newContent) : "";
         parent_tag ? parent_tag.append(element) : " ";
         return element
