@@ -1,0 +1,53 @@
+.group-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group-container div {
+    margin: 2%;
+}
+
+
+.weather-container{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+
+.weather-container .weather-wrap{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 2%;
+}
+
+
+.weather-container table{
+    display: flex;
+    justify-content: center;
+}
+
+.weather-container table tbody{
+    width: 100%;
+
+}
+
+.weather-container p{
+    font-weight: bold;
+}
+
+.weather-wrap{
+    width: 50%;
+
+}
+
+.weather-wrap h6{
+    color: orange;
+}
+
+.weather-container tr{
+    display: flex;
+    justify-content: space-between;
+}
